@@ -1,0 +1,10 @@
+idf_component_register(SRCS "src/blufi_security.c"
+                            "src/blufi_init.c"
+                            "src/user_equipment.c"
+                            "src/user_blufi.c"
+                            "src/user_wifi.c"
+                            "src/user_mqtt.c"
+                            "src/user_led.c"
+                            "src/usart1.c"          
+                    INCLUDE_DIRS "inc"
+                    REQUIRES nvs_flash bt mqtt json)
